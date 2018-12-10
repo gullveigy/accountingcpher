@@ -11,7 +11,7 @@ before_script:
 - npm run custom-build
 - cd dist && httpserver -p 8080 &
 script:
-- npx cypress run  --spec cypress/integration/expenditures.spec.js
+- npx cypress run  --spec cypress/integration/expendituresup.spec.js
 deploy:
   provider: surge
   skip_cleanup: true
