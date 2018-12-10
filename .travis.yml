@@ -11,4 +11,11 @@ before_script:
 - npm run custom-build
 - cd dist && httpserver -p 8080 &
 script:
-- npx cypress run  --spec cypress/integration/expendituresup.spec.js
+- npx cypress run  --spec cypress/integration/home-page.spec.js
+deploy:
+  provider: surge
+  skip_cleanup: true
+  domain: exotic-advice.surge.sh
+  project: ./dist
+  on:
+    branch: master
