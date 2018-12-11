@@ -2,7 +2,7 @@
 
 Name: Ying Yan
 
-Student No.: 20082241 
+Student No.: 20082241
 
 Github Respository: https://github.com/gullveigy/accountingcpher.git
 
@@ -10,11 +10,11 @@ Github Respository: https://github.com/gullveigy/accountingcpher.git
 
 ...... A statement of the Vue app's context and objectives (just a paragraph)........
 
-     This is an online accounting web app. 
+     This is an online accounting web app.
 
      The functions that have been realized are getting all the expenditure records of one user, CRUD operations on these records by this user.
 
-     The function that dding a new record will trigger a new page. 
+     The function that dding a new record will trigger a new page.
 
 ## E2E Testing.
 
@@ -31,11 +31,11 @@ Github Respository: https://github.com/gullveigy/accountingcpher.git
      │ Searched:   cypress/integration/expenditures.spec.js                                           │
      └────────────────────────────────────────────────────────────────────────────────────────────────┘
      ────────────────────────────────────────────────────────────────────────────────────────────────────
-      
-												    
+
+
      Running: expenditures.spec.js...                                                         (1 of 1)
-    
-     
+
+
      Manage Expenditures page
      ✓ allows a expenditure record to be edited (3126ms)
      ✓ should contains a expenditure record edited (1105ms)
@@ -66,12 +66,12 @@ Github Respository: https://github.com/gullveigy/accountingcpher.git
      (Run Finished)
 
 
-     Spec                                                Tests  Passing  Failing  Pending  Skipped 
+     Spec                                                Tests  Passing  Failing  Pending  Skipped
     ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
     │ ✔ expenditures.spec.js                    00:04        7        7        -        -        -   │
     └────────────────────────────────────────────────────────────────────────────────────────────────┘
-     All specs passed!                           00:04        7        7        -        -        - 
-     
+     All specs passed!                           00:04        7        7        -        -        -
+
      The command "npx cypress run  --spec cypress/integration/expenditures.spec.js" exited with 0.
 
 
@@ -83,13 +83,15 @@ https://travis-ci.org/gullveigy/accountingcpher
 
 ## Automated Deployment.
 
-.... Specify the URL of the auto-deployed Vue app, e.g. 
+.... Specify the URL of the auto-deployed Vue app, e.g.
 
 http://exotic-advice.surge.sh/
 
 ## Extra features.
 
 . . . . Briefly state any extra aspects of your automation process that you feel should be high-lighted . . . . .
+
+    I deployed back-end server to heroku.
 
 ## Appendix.
 
@@ -109,7 +111,7 @@ http://exotic-advice.surge.sh/
      ────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
-     Running: home-page.spec.js...                                                            (1 of 1) 
+     Running: home-page.spec.js...                                                            (1 of 1)
 
 
      Home page
@@ -142,13 +144,13 @@ http://exotic-advice.surge.sh/
 
      (Run Finished)
 
-         Spec                                                Tests  Passing  Failing  Pending  Skipped 
+         Spec                                                Tests  Passing  Failing  Pending  Skipped
 
      ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
      │ ✔ home-page.spec.js                         00:03        5        5        -        -        - │
      └────────────────────────────────────────────────────────────────────────────────────────────────┘
       All specs passed!                           00:03        5        5        -        -        -
-     
+
      The command "npx cypress run  --spec cypress/integration/home-page.spec.js" exited with 0.
 
 
@@ -164,7 +166,7 @@ http://exotic-advice.surge.sh/
      ────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
-     Running: expendi.spec.js...   
+     Running: expendi.spec.js...
 
 
      Expendi page
@@ -194,12 +196,12 @@ http://exotic-advice.surge.sh/
 
 
          Spec                                                Tests  Passing  Failing  Pending  Skipped
-	 
+
      ┌────────────────────────────────────────────────────────────────────────────────────────���───────┐
      │ ✔ expendi.spec.js                           00:04        2        2        -        -        -   │
      └──────────────────────────────────────────────────────────────────────────────────────────────────┘
-      All specs passed!                           00:04        2        2        -        -        - 
-      
+      All specs passed!                           00:04        2        2        -        -        -
+
      The command "npx cypress run  --spec cypress/integration/expendi.spec.js" exited with 0.
 
 
@@ -215,7 +217,7 @@ http://exotic-advice.surge.sh/
      ────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
-     Running: expenditures.spec.js...                                                         (1 of 1) 
+     Running: expenditures.spec.js...                                                         (1 of 1)
 
 
      Manage Expenditures page
@@ -250,12 +252,12 @@ http://exotic-advice.surge.sh/
      (Run Finished)
 
 
-         Spec                                                Tests  Passing  Failing  Pending  Skipped 
-     
+         Spec                                                Tests  Passing  Failing  Pending  Skipped
+
      ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
      │ ✔ expendituresup.spec.js                    00:04        4        4        -        -        - │
      └────────────────────────────────────────────────────────────────────────────────────────────────┘
-      All specs passed!                           00:04        4        4        -        -        -  
+      All specs passed!                           00:04        4        4        -        -        -
 
      The command "npx cypress run  --spec cypress/integration/expenditures.spec.js" exited with 0.
 
@@ -272,7 +274,7 @@ http://exotic-advice.surge.sh/
      ────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
-     Running: expendituresup.spec.js...                                                       (1 of 1) 
+     Running: expendituresup.spec.js...                                                       (1 of 1)
 
 
      Manage Expenditures page
@@ -304,14 +306,14 @@ http://exotic-advice.surge.sh/
      (Run Finished)
 
 
-         Spec                                                Tests  Passing  Failing  Pending  Skipped 
+         Spec                                                Tests  Passing  Failing  Pending  Skipped
 
 
      ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
      │ ✔ expendituresup.spec.js                    00:04        4        4        -        -        - │
      └────────────────────────────────────────────────────────────────────────────────────────────────┘
-      All specs passed!                           00:04        4        4        -        -        - 
-      
+      All specs passed!                           00:04        4        4        -        -        -
+
       The command "npx cypress run  --spec cypress/integration/expendituresup.spec.js" exited with 0.
 
 
