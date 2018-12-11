@@ -1,6 +1,6 @@
 describe("Expendi page", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:8080");
+    cy.visit("http://exotic-advice.surge.sh");
     // Click Record Expenditure navbar link
     cy.get(".nav-item").contains('Record Expenditure' ).click();
   });

@@ -1,6 +1,6 @@
 describe("Manage Expenditures page", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:8080");
+    cy.visit("http://exotic-advice.surge.sh");
     cy.get(".nav-item").contains('Manage Expenditures' ).click();
   });
 
