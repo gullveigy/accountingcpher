@@ -255,9 +255,9 @@ http://exotic-advice.surge.sh/
          Spec                                                Tests  Passing  Failing  Pending  Skipped
 
      ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-     │ ✔ expendituresup.spec.js                    00:04        4        4        -        -        - │
+     │ ✔ expendituresup.spec.js                    00:04        7        7        -        -        - │
      └────────────────────────────────────────────────────────────────────────────────────────────────┘
-      All specs passed!                           00:04        4        4        -        -        -
+      All specs passed!                           00:04        7        7        -        -        -
 
      The command "npx cypress run  --spec cypress/integration/expenditures.spec.js" exited with 0.
 

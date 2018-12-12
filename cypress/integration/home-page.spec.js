@@ -36,7 +36,7 @@ describe("Home page", () => {
 
   describe("Home page layout and required links", () => {
     it("Shows the required links and titles", () => {
-      cy.get('.lead').should('contain', 'Online Accounting Web App')
+      cy.get('.lead').should('contain', 'Accounting Web App')
       cy.get('p').should('contain', 'Managing money is equivalent to managing everything.')
       cy.get('.btn1').should('contain', 'Go for Your Recoding!')
       cy.get('.btn2').should('contain', 'Contact Us')

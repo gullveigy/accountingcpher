@@ -6,7 +6,7 @@
     <table align="center">
       <tr>
         <td>
-          <p class="lead"><b><i>Online Accounting Web App</i></b>
+          <p class="lead"><b><i>Accounting Web App</i></b>
           <p>Managing money is equivalent to managing everything.</p>
         </td>
       </tr>
