@@ -1,26 +1,32 @@
 <template>
   <div class="hero">
-    <h3 class="vue-title"><i class="fa fa-comment" style="padding: 3px"></i>{{messagetitle}}</h3>
+    <carousel :data="data" :controls="false"></carousel>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'ContactUs',
-    data () {
+    data() {
       return {
-        messagetitle: ' Contact Us '
-      }
-    }
-  }
+        data: [
+          '<div class="example-slide">Slide 1</div>',
+          '<div class="example-slide">Slide 2</div>',
+          '<div class="example-slide">Slide 3</div>',
+        ],
+      };
+    },
+  };
 </script>
 
-<style scoped>
-  .vue-title {
-    margin-top: 0px;
-    text-align: center;
-    font-size: 45pt;
-    margin-bottom: 10px;
+<style>
+  .example-slide {
+    align-items: center;
+    background-color: #666;
+    color: #999;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    min-height: 10rem;
   }
 </style>
 

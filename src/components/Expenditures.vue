@@ -5,7 +5,12 @@
        <v-client-table :columns="columns" :data="expenditures" :options="options">
          <a slot="remove" slot-scope="props" class="fa fa-trash-o fa-2x" @click="deleteExpenditure(props.row._id)"></a>
          <a slot="edit" slot-scope="props" class="fa fa-edit fa-2x" @click="editExpenditure(props.row._id)"></a>
+         <a slot="child_row" slot-scope="props">
+           <div class="vue-message">[ {{props.row.message}} ]</div>
+         </a>
        </v-client-table>
+       <p><a href="#/expendi" class="btn btn-secondary btn" role="button">Add Recordings</a></p>
+       <p> <a href="#/chart" class="btn btn-secondary btn" role="button">Line Charts</a></p>
      </div>
   </div>
 </template>
@@ -25,17 +30,16 @@
         expenditures: [],
         props: ['_id'],
         errors: [],
-        columns: ['_id', 'payment', 'date', 'type', 'amount', 'edit', 'remove'],
+        columns: ['_id', 'payment', 'date', 'amount', 'edit', 'remove'],
         options: {
           perPage: 10,
-          filterable: ['payment', 'date','type'],
+          filterable: ['payment', 'date'],
           sortable: ['amount','date'],
           headings: {
             _id: 'ID',
             payment: 'Payment',
             amount: 'Amount',
             date: 'Date',
-            type: 'Type'
           },
           orderBy: {
             columns: ['amount','date']

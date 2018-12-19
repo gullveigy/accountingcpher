@@ -17,20 +17,6 @@
         <option value="Others">Others</option>
       </select>
     </div>
-    <div class="form-group">
-      <label class="form-label">Select Expenditure Type</label>
-      <select id="type" name="type" class="form-control" type="text" v-model="type">
-        <option value="null" selected disabled hidden>Choose Expenditure Type</option>
-        <option value="Repast">Repast</option>
-        <option value="Shopping">Shopping</option>
-        <option value="Daily Expenses">Daily Expenses</option>
-        <option value="Traffic">Traffic</option>
-        <option value="Entertainment">Entertainment</option>
-        <option value="Communication">Communication</option>
-        <option value="Medical">Medical</option>
-        <option value="Others">Others</option>
-      </select>
-    </div>
     <div class="form-group" :class="{ 'form-group--error': $v.amount.$error }">
       <label class="form-control-label" name="amount">Amount (Enter a number)</label>
       <input class="form__input1" type="decimal" v-model.trim="amount"/>
@@ -41,6 +27,11 @@
       <input class="form__input2" type="date" v-model.trim="date"/>
     </div>
     <div class="error" v-if="!$v.date.required">Date is Required</div>
+    <div class="form-group" :class="{ 'form-group--error': $v.message.$error }">
+      <label class="form__label">Message</label>
+      <input class="form__input" placeholder="enter some message here" v-model.trim="$v.message.$model"/>
+    </div>
+    <div class="error" v-if="!$v.message.required">Message is Required</div>
     <p>
       <button class="btn btn-secondary btn1" type="submit" :disabled="submitStatus === 'PENDING'">{{ expenditureBtnTitle }}</button>
       <a href="#/expenditures" class="btn btn-secondary btn2" role="button">Return to Manage</a>
@@ -74,13 +65,16 @@
         messagetitle: ' Record Your Expenditure Here ',
         email: this.expenditure.email,
         payment: this.expenditure.payment,
-        type: this.expenditure.type,
         amount: this.expenditure.amount,
         date: this.expenditure.date,
+        message: this.expenditure.message,
         submitStatus: null
       }
     },
     validations: {
+      message: {
+        required
+      },
       amount: {
         required,
         //between: between(1, 1000)
@@ -104,9 +98,9 @@
             var expenditure = {
               email: this.email,
               payment: this.payment,
-              type: this.type,
               amount: this.amount,
-              date: this.date
+              date: this.date,
+              message: this.message
             }
             this.expenditure = expenditure
             console.log('Submitting in ExpenditureForm : ' + JSON.stringify(this.expenditure, null, 5))
@@ -144,12 +138,12 @@
     margin-top: 5px;
   }
   .btn1 {
-    margin-right: 20px;
     margin-top: 26px;
+    font-size: 15pt;
   }
   .btn2 {
-    margin-left: 20px;
     margin-top: 26px;
+    font-size: 15pt;
   }
   p {
     margin-top: 10px;

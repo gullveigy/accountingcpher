@@ -18,7 +18,7 @@
   export default {
     data () {
       return {
-        expenditure: {email: '1804094746@qq.com', payment: 'Alipay',  type: 'Shopping',  amount: '', date: ''},
+        expenditure: {email: '1804094746@qq.com', payment: 'Alipay', amount: '', date: '', message: ''},
         messagetitle: ' Record Expenditure '
       }
     },
@@ -44,6 +44,7 @@
   #app1 {
     width: 95%;
     margin: 0 auto;
+    background:  url("../assets/loveyourselftear.jpg") repeat center top fixed;
   }
   .vue-title {
     margin-top: 30px;

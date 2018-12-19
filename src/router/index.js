@@ -5,6 +5,9 @@ import Expenditures from '@/components/Expenditures'
 import ContactUs from '@/components/ContactUs'
 import Expendi from '@/components/Expendi'
 import Edit from '@/components/Edit'
+import Chart from '@/components/Chart'
+
+
 
 
 Vue.use(Router)
@@ -36,6 +39,11 @@ export default new Router({
       path: '/contact',
       name: 'ContactUs',
       component: ContactUs
+    },
+    {
+      path: '/chart',
+      name: 'Chart',
+      component: Chart
     }
   ]
 })
