@@ -2,7 +2,7 @@
   <div id="app">
     <b-navbar toggleable="md" variant="dark" type="dark">
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-      <b-navbar-brand to="/">Accounting Web App</b-navbar-brand>
+      <b-navbar-brand to="/home">Accounting Web App</b-navbar-brand>
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav class="ml-auto">
           <b-nav-item to="/contact"><i class="fa fa-comment" style="padding: 5px"> Contact </i></b-nav-item>

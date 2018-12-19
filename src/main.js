@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueSweetalert2 from 'vue-sweetalert2'
 import APlayer from '@moefe/vue-aplayer';
+import firebase from 'firebase';
 
 Vue.use(BootstrapVue)
 Vue.use(VueSweetalert2)
@@ -17,6 +18,18 @@ Vue.use(APlayer, {
 });
 
 Vue.config.productionTip = false
+
+
+
+var config = {
+  apiKey: "AIzaSyCbpVC54youafHVN4YzVqgEw4APIm8e6lI",
+  authDomain: "cypher2.firebaseapp.com",
+  databaseURL: "https://cypher2.firebaseio.com",
+  projectId: "cypher2",
+  storageBucket: "cypher2.appspot.com",
+  messagingSenderId: "281514910066"
+};
+firebase.initializeApp(config);
 
 
 /* eslint-disable no-new */

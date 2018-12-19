@@ -19,8 +19,15 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: '/login'
+    },
+    {
+      path: '/home',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: {
+        requiresAuth: true
+      }
     },
     {
       path: '/expenditures',
@@ -59,7 +66,12 @@ export default new Router({
       component: SignUp
     }
   ]
-})
+});
+
+
+
+
+
 
 
 
