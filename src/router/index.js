@@ -6,6 +6,9 @@ import ContactUs from '@/components/ContactUs'
 import Expendi from '@/components/Expendi'
 import Edit from '@/components/Edit'
 import Chart from '@/components/Chart'
+import Login from '@/components/Login'
+import SignUp from '@/components/SignUp'
+import firebase from 'firebase';
 
 
 
@@ -44,6 +47,16 @@ export default new Router({
       path: '/chart',
       name: 'Chart',
       component: Chart
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/sign-up',
+      name: 'SignUp',
+      component: SignUp
     }
   ]
 })
