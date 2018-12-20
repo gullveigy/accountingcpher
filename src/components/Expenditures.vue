@@ -19,6 +19,8 @@
   import ExpenditureService from '@/services/expenditureservice'
   import Vue from 'vue'
   import VueTables from 'vue-tables-2'
+  import firebase from 'firebase'
+
 
   Vue.use(VueTables.ClientTable, {compileTemplates: true, filterByColumn: true})
 

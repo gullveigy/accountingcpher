@@ -9,6 +9,7 @@ import Chart from '@/components/Chart'
 import Login from '@/components/Login'
 import SignUp from '@/components/SignUp'
 import firebase from 'firebase';
+import HomePage from '@/components/HomePage'
 
 
 
@@ -19,7 +20,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/login'
+      redirect: '/homepage'
     },
     {
       path: '/home',
@@ -64,6 +65,11 @@ export default new Router({
       path: '/sign-up',
       name: 'SignUp',
       component: SignUp
+    },
+    {
+      path: '/homepage',
+      name: 'HomePage',
+      component: HomePage
     }
   ]
 });

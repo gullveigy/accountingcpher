@@ -19,6 +19,7 @@
           </div>
         </div>
       </div>
+    <p><a href="#/homepage" class="btn btn-secondary btn3" role="button">Return to HomePage</a></p>
 
     <aplayer :audio="audio" :lrcType="3" fixed />
   </div>
@@ -84,6 +85,10 @@
     text-align: center;
     font-size: 30pt;
     margin-bottom: 5px;
+  }
+  p {
+    margin:auto;
+    margin-top: 50pt;
   }
 
 </style>
