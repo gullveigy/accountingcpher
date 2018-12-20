@@ -15,9 +15,6 @@
     <p>
     <a href="#/expenditures" class="btn btn-secondary btn1" role="button">Go for Your Recoding!</a>
     </p>
-    <p>
-      <a href="#/contact" class="btn btn-secondary btn2" role="button">Contact Us</a>
-    </p>
   </div>
 </template>
 
