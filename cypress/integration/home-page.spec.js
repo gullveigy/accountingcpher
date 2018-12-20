@@ -39,16 +39,11 @@ describe("Home page", () => {
       cy.get('.lead').should('contain', 'Accounting Web App')
       cy.get('p').should('contain', 'Managing money is equivalent to managing everything.')
       cy.get('.btn1').should('contain', 'Go for Your Recoding!')
-      cy.get('.btn2').should('contain', 'Contact Us')
     });
     it("Redirects when btn1 links are clicked", () => {
       cy.get('.btn1').should('contain', 'Go for Your Recoding!').click();
       cy.url().should('include','/expenditures' )
     });
-    it("Redirects when btn2 links are clicked", () => {
-      cy.get('.btn2').should('contain', 'Contact Us').click();
-      cy.url().should('include','/contact' )
-    })
   })
 
 });
