@@ -1,13 +1,6 @@
 <template>
   <form @submit.prevent="submit">
     <div class="form-group">
-      <label class="form-label">Select Your Login Email</label>
-      <select id="email" name="email" class="form-control" type="text" v-model="email">
-        <option value="null" selected disabled hidden>1804094746@qq.com</option>
-        <option value="1804094746@qq.com">1804094746@qq.com</option>
-      </select>
-    </div>
-    <div class="form-group">
       <label class="form-label">Select Payment Type</label>
       <select id="payment" name="payment" class="form-control" type="text" v-model="payment">
         <option value="null" selected disabled hidden>Choose Payment Type</option>
@@ -63,7 +56,7 @@
     data () {
       return {
         messagetitle: ' Record Your Expenditure Here ',
-        email: this.expenditure.email,
+        email: '1804094746@qq.com',
         payment: this.expenditure.payment,
         amount: this.expenditure.amount,
         date: this.expenditure.date,
