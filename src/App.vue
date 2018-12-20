@@ -7,6 +7,7 @@
         <b-navbar-nav class="ml-auto">
           <b-nav-item to="/contact"><i class="fa fa-comment" style="padding: 5px"> Contact </i></b-nav-item>
           <b-nav-item to="/login"><i class="fa fa-sign-in" style="padding: 5px"> Login </i></b-nav-item>
+          <button @click="logout">Logout</button>
           <i class="fa fa-pied-piper-alt fa-1x" style="padding: 5px; color: white;"></i>
         </b-navbar-nav>
       </b-collapse>
@@ -17,6 +18,26 @@
   </div>
 </template>
 
+
+<script>
+  import firebase from 'firebase';
+  // @ is an alias to /src
+
+  export default {
+    name: 'home',
+    methods: {
+      logout: function() {
+        firebase.auth().signOut().then(() => {
+          this.$router.replace('login')
+        })
+      }
+    }
+  }
+</script>
+
+
+
+
 <style>
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -25,11 +46,12 @@
     text-align: center;
     color: 	#FFF0F5;
     margin-top: 0px;
-    background:  url("./assets/loveyourselftear.jpg") repeat center top fixed;
+    background:  url("./assets/loveyourselftear.jpg") repeat center fixed;
   }
   button
   {
     margin:5px;
+    border-radius: 10px;
   }
   .b-nav-item {
     color: white;

@@ -1,11 +1,10 @@
 <template>
-  <div class="hello">
+  <div class="hero">
     <div id="content">
       <h>Line Charts for Your Expenditure Recordings</h>
       <canvas ref="chart"></canvas>
     </div>
     <a href="#/expenditures" class="btn btn-secondary btn" role="button">Return to Manage</a>
-    <p>Just click <a href ="#/contact">here</a> to contact us</p>
   </div>
 </template>
 
@@ -95,12 +94,7 @@
     width: 1024px;
     padding: 20px;
   }
-  p {
-    margin: auto;
-    margin-top: 120px;
-    font-size: 15pt;
-    color: #E6E6FA;
-  }
+
 </style>
 
 
