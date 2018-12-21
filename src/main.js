@@ -20,7 +20,7 @@ Vue.use(APlayer, {
 Vue.config.productionTip = false
 
 
-
+let app = '';
 var config = {
   apiKey: "AIzaSyCbpVC54youafHVN4YzVqgEw4APIm8e6lI",
   authDomain: "cypher2.firebaseapp.com",
